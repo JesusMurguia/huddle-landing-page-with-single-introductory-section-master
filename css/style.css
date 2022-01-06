@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+*{
+    --violet: hsl(257, 40%, 49%);
+    --soft-magenta: hsl(300, 69%, 71%);
+    
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    background: url("../images/bg-desktop.svg") no-repeat;
+    background-size: auto;
+    background-color: var(--violet);
+
+}
+
+.container-fluid{
+    padding:2em 4.5em;
+}
+.container-fluid > .row{
+    min-height: 100vh;
+
+}
+
+#logo-col{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom:2em;;
+}
+
+#logo{
+    max-width: 13em;
+}
+
+#mockup-col{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#text-col{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding:0;
+    padding-bottom: 7em;
+    padding-right: 2em;
+}
+
+#text-col > h1{
+    color:white;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5;
+    margin-bottom:0.5em;
+}
+
+#text-col > p{
+    color:rgba(255, 255, 255, 0.75);
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.13em;
+    margin-bottom: 1.5em;
+}
+
+#button{
+    background:white;
+    color: var(--violet);
+    font-family: 'Poppins', sans-serif;
+    padding: 0.75em 3.5em;
+    border-radius: 2em;
+    font-weight: 400;
+    font-size: 1.1em;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .3);
+}
+
+#footer{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 1em;
+}
+
+.fab{
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 50%;
+    font-size: 1.2em;
+    padding: 0.5em;
+    margin: 1em;
+    margin-right: 0;
+    width: 2em;
+    color: white;
+}
+
+#button:hover{
+    background: var(--soft-magenta);
+    color: white;
+}
+
+.fab:hover{
+    cursor: pointer;
+    border-color: var(--soft-magenta);
+    color:var(--soft-magenta);
+}
+
+@media screen and (max-width: 768px){
+    body{
+        background: url("../images/bg-mobile.svg") no-repeat top;
+        background-color: var(--violet);
+    }
+
+    .container-fluid{
+        padding:2em 2em;
+    }
+
+    #logo{
+        max-width: 8em;
+    }
+
+    #mockup-col{
+        padding:2em 1em;
+    }
+
+    #text-col{
+        padding: 0 1em;
+        text-align: center;
+        align-items: center;
+    }
+
+    h1{
+        font-size: 1.5em;
+    }
+
+    p{
+        font-size: 1em!important;
+    }
+    
+    #footer{
+        margin-top:2em;
+        justify-content: center;
+    }
+}
