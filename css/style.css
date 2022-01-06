@@ -16,7 +16,7 @@ body{
 }
 
 .container-fluid{
-    padding:2em 4.5em 2em 4.5em;
+    padding:3em 4.5em 2em 4.5em;
 }
 .container-fluid > .row{
     min-height: 90vh;
